@@ -1,0 +1,24 @@
+{
+  "name": "sandcastle-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sandcastle": "npx tsx .sandcastle/main.ts",
+    "sandcastle:build": "npx sandcastle docker build-image",
+    "sandcastle:init": "npx sandcastle init --agent opencode --model deepseek/deepseek-v4-flash --template blank",
+    "postinstall": "patch-package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@ai-hero/sandcastle": "^0.5.10",
+    "@types/node": "^25.8.0",
+    "patch-package": "^8.0.1",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3"
+  }
+}
